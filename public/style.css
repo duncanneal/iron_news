@@ -9,7 +9,7 @@ ul {
 ul {
   list-style: none;
   text-align: left;
-  font-family: 'Verdana', sans-serif;
+  
 }
 
 ul li {
@@ -26,12 +26,14 @@ ul li:last-child {
   border:none;
 }
 
-ol {
-  list-style: none;
-  text-align: left;
-  display: inline-block;
-  font-family: 'Verdana', sans-serif;
+ol li {
+  font-size:10pt;
 }
+
+h5 { display: inline-block
+}
+
+
 
 
 

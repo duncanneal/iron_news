@@ -15,7 +15,12 @@
 
   <ol>
     <% @data["entry"].each do |entry| %>
-    <li><%= entry %></li>
+    <li>
+      <img src="<%= entry['image'] %>">
+      <h3><%= entry["headline"] %></h3>
+      <h5><%= entry["comment"] %></h5>
+      <p><%= entry["subtitle"] %></p>
+    </li>
     <% end %>
   </ol>
   
