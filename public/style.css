@@ -2,8 +2,16 @@ body {
   font-family: 'Verdana', 'Geneva', sans-serif;
 }
 
-ul {
-    background-color: #909090
+#wrapper {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #E6E6E6
+}
+
+
+ul {width: 980px;
+  margin: 0 auto;
+  background-color: #909090
 }
 
 ul {
@@ -28,9 +36,27 @@ ul li:last-child {
 
 ol li {
   font-size:10pt;
+  padding:3pt;
 }
 
-h5 { display: inline-block
+h3 {
+  display: inline-block;
+  padding:3;
+}
+
+h5 {
+  display: inline-block;
+  padding:3pt;
+  font-size:6pt;
+  color: #585858;
+}
+
+p {
+  text-align: justify;
+  padding:2pt;
+  font-size:7pt;
+
+  color: #585858
 }
 
 
