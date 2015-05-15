@@ -1,0 +1,37 @@
+body {
+  font-family: 'Verdana', 'Geneva', sans-serif;
+}
+
+ul {
+    background-color: #909090
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  font-family: 'Verdana', sans-serif;
+}
+
+ul li {
+  display: inline-block;
+  padding: 5px;
+  border-right: 1px solid white;
+}
+
+ul li:first-child { 
+ font-weight: bold;
+}
+
+ul li:last-child { 
+  border:none;
+}
+
+ol {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  font-family: 'Verdana', sans-serif;
+}
+
+
+

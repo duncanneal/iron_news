@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title> @page title </title>
-  </head>
-
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title> <%= @page_title %> </title>
+</head>
+<body>
   <header> 
-    <h1>Iron News</h1>
-  </header>
-  </div>
     <ul>
-      <% @data["titles"].each do |titles| %>
-      <li><%= titles %></li>
+      <% @data["titles"].each do |title| %>
+      <li><%= title %></li>
       <% end %>
     </ul>
+  </header>
 
-  <% end %>
-</body>
-</div>
+  <ol>
+    <% @data["entry"].each do |entry| %>
+    <li><%= entry %></li>
+    <% end %>
+  </ol>
+  
+</body>  
 </html>

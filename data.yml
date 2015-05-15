@@ -1,9 +1,15 @@
 ---
 titles:
-  - iron news
-  - new
-  - comments
-  - show
-  - ask
-  - jobs
-  - submit
+  - Iron News
+  - New
+  - Comments
+  - Show
+  - Ask
+  - Jobs
+  - Submit
+
+entry:
+  image: images/grayarrow.gif
+  headline: Meatball brisket doner ut. Short loin prosciutto aliqua laboris pariatur.
+  subtitle: Aliquip enim exercitation shankle brisket jerky pork belly.  
+ 
