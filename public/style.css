@@ -47,14 +47,15 @@ h3 {
 
 h5 {
   display: inline-block;
-  padding:3pt;
+  padding:4pt;
   font-size:6pt;
   color: #585858;
 }
 
 p {
-  text-align: justify;
-  padding:2pt;
+  text-align: inline-block;
+  text-indent: 11pt;
+  padding:3pt;
   font-size:7pt;
   color: #585858;
 }
