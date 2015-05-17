@@ -1,12 +1,12 @@
 ---
 titles:
   - Iron News
-  - New
-  - Comments
-  - Show
-  - Ask
-  - Jobs
-  - Submit
+  - new
+  - comments
+  - show
+  - ask
+  - jobs
+  - submit
 
 entry:
   - headline: Bacon ipsum dolor amet doner ham hock prosciutto pork belly chuck tenderloin biltong meatloaf.
@@ -127,4 +127,23 @@ entry:
 
   - headline: In frankfurter nostrud short loin culpa bresaola meatloaf.
     source: (npr.org)
-    subtitle: Qui tempor tongue consectetur | 30 comments   
+    subtitle: 3 hours ago
+ 
+footer_list:
+  - Guidlines
+  - FAQ
+  - Support
+  - Lists
+  - Bookmarklet
+  - DMCA
+  - Y Combinator
+  - Apply
+  - Contact    
+    
+    
+    
+    
+    
+    
+    
+

@@ -2,22 +2,24 @@ body {
   font-family: 'Verdana', 'Geneva', sans-serif;
 }
 
-#wrapper {
-  width: 980px;
+#main-wrapper {
+  background-color: #E6E6E6;
+  max-width: 980px;
   margin: 0 auto;
-  background-color: #E6E6E6
+  padding-bottom: 30px
+
 }
 
-
-ul {width: 980px;
+#main-wrapper ul {
+  width: 980px;
   margin: 0 auto;
   background-color: #909090
 }
 
-ul {
+ul  {
   list-style: none;
   text-align: left;
-  
+  font-size: 10pt;  
 }
 
 ul li {
@@ -28,6 +30,7 @@ ul li {
 
 ul li:first-child { 
  font-weight: bold;
+ font-size: 12pt;
 }
 
 ul li:last-child { 
@@ -41,7 +44,6 @@ ol li {
 
 h3 {
   display: inline-block;
-  padding:3;
 }
 
 h5 {
@@ -55,9 +57,36 @@ p {
   text-align: justify;
   padding:2pt;
   font-size:7pt;
-
-  color: #585858
+  color: #585858;
 }
+
+
+.footer_element {
+  text-align: center;
+  font-size: 9pt
+}
+
+footer li:first-child { 
+ font-weight: normal;
+ font-size: 9pt;
+}
+
+footer li {
+  border-right: 1px solid #909090;''
+}
+
+.footer_element { 
+ background-color: #E6E6E6;
+ max-width: 980px;
+ margin:0 auto;
+ padding-bottom: 30px;
+ padding-top: 20px;
+ border-top: 2px solid #909090;
+
+
+}
+
+
 
 
 

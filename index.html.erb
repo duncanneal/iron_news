@@ -2,30 +2,36 @@
 <html>
 <head>
  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title> <%= @page_title %> </title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <title> <%= @page_title %> </title>
 </head>
 <body>
-  <div id="wrapper"> 
-  <header>
-    <div class="Logo"
-      </div> 
-    <ul>
-      <% @data["titles"].each do |title| %>
-      <li><%= title %></li>
+  <div id="main-wrapper"> 
+    <header> 
+      <ul>
+        <% @data["titles"].each do |title| %>
+        <li><%= title %></li>
+        <% end %>
+      </ul>
+    </header>
+    <ol>
+      <% @data["entry"].each do |entry| %>
+      <li>
+        <img src="images/grayarrow.gif" alt="arrow_mark">
+        <h3><%= entry["headline"] %></h3>
+        <h5><%= entry["source"] %></h5>
+        <p><%= entry["subtitle"] %></p>
+      </li>
+      <% end %>
+    </ol>
+  </div>
+  <footer>
+    <ul class="footer_element">
+      <% @data["footer_list"].each do |item| %>
+      <li> <%= item %>
+      </li>
       <% end %>
     </ul>
-  </header>
-  <ol>
-    <% @data["entry"].each do |entry| %>
-    <li>
-      <img src="images/grayarrow.gif" alt="arrow_mark">
-      <h3><%= entry["headline"] %></h3>
-      <h5><%= entry["source"] %></h5>
-      <p><%= entry["subtitle"] %></p>
-    </li>
-    <% end %>
-  </ol>
-   </div>
-</body>  
+  </footer>
+</body>
 </html>
