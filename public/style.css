@@ -7,7 +7,6 @@ body {
   max-width: 980px;
   margin: 0 auto;
   padding-bottom: 30px
-
 }
 
 #main-wrapper ul {
@@ -60,6 +59,11 @@ p {
   color: #585858;
 }
 
+h2 {
+  display: inline-block; 
+  text-indent: 40pt; 
+  font-size:12pt;
+}
 
 .footer_element {
   text-align: center;
