@@ -42,8 +42,16 @@ ul li:nth-child(2) {
  font-size: 12pt;
 }
 
-ul li:last-child { 
-  border:none;
+ul li:nth-child(8) { 
+ border: none
+}
+
+h4 {
+ float: right;
+ padding: 5px;
+
+  display: inline-block;
+  font-size: 10pt; 
 }
 
 ol li {
@@ -60,12 +68,6 @@ h2 {
 h3 {
   display: inline-block;
   font-size:11pt;
-}
-
-h4 {
-  text-align: right;
-  display: inline-block;
-  font-size: 10pt; 
 }
 
 h5 {
@@ -104,8 +106,6 @@ footer li {
  padding-bottom: 30px;
  padding-top: 20px;
  border-top: 3px solid #8d90a1
-
-
 }
 
 
