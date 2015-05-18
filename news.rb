@@ -1,4 +1,6 @@
-
+require 'rubygems'
+require 'bundler/setup'
+require 'tilt'
 require 'erb'
 require 'webrick'
 require 'yaml'

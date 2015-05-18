@@ -1,1 +1,30 @@
-
+doctype html
+html
+  head
+    link href="reset.css" rel="stylesheet" type="text/css" /
+    link href="style.css" rel="stylesheet" type="text/css" /
+    title <%= @page_title %
+  body
+    #main-wrapper
+      header
+        ul
+        span.logo i
+        | <% @data["titles"].each do |title| %
+        li <%= title %
+        | <% end %
+        h4 login
+      ol
+        | <% @data["entry"].each do |entry| %
+        li
+          img alt="arrow_mark" src="images/grayarrow.gif" /
+          h3 <%= entry["headline"] %
+          h5 <%= entry["source"] %
+          p <%= entry["subtitle"] %
+        | <% end %
+      h2 More
+    footer
+      ul.footer_element
+        | <% @data["footer_list"].each do |item| %
+        li
+          | <%= item %
+        | <% end %
