@@ -2,17 +2,27 @@ body {
   font-family: 'Verdana', 'Geneva', sans-serif;
 }
 
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 5px;
+  margin-left: 1pt;
+  border: 2px solid #fff;
+  font-weight: 600;
+}
+
 #main-wrapper {
-  background-color: #E6E6E6;
+  background-color: #eef0f3;
   max-width: 980px;
   margin: 0 auto;
   padding-bottom: 30px
 }
 
-#main-wrapper ul {
+ ul {
   width: 980px;
   margin: 0 auto;
-  background-color: #909090
+  background-color: #8d90a1
 }
 
 ul  {
@@ -27,7 +37,7 @@ ul li {
   border-right: 1px solid white;
 }
 
-ul li:first-child { 
+ul li:nth-child(2) { 
  font-weight: bold;
  font-size: 12pt;
 }
@@ -37,33 +47,40 @@ ul li:last-child {
 }
 
 ol li {
-  font-size:10pt;
-  padding:3pt;
+  font-size: 10pt;
+  padding: 3pt;
+}
+
+h2 {
+  display: inline-block; 
+  text-indent: 40pt; 
+  font-size: 12pt;
 }
 
 h3 {
   display: inline-block;
+  font-size:11pt;
+}
+
+h4 {
+  text-align: right;
+  display: inline-block;
+  font-size: 10pt; 
 }
 
 h5 {
   display: inline-block;
-  padding:4pt;
-  font-size:6pt;
+  padding: 4pt;
+  font-size: 7pt;
   color: #585858;
 }
 
 p {
   text-align: inline-block;
   text-indent: 11pt;
-  padding:3pt;
-  font-size:7pt;
+  padding: 1pt;
+  font-size: 8pt;
   color: #585858;
-}
-
-h2 {
-  display: inline-block; 
-  text-indent: 40pt; 
-  font-size:12pt;
 }
 
 .footer_element {
@@ -71,22 +88,22 @@ h2 {
   font-size: 9pt
 }
 
-footer li:first-child { 
+footer li:nth-child(2) { 
  font-weight: normal;
  font-size: 9pt;
 }
 
 footer li {
-  border-right: 1px solid #909090;''
+  border-right: 1px solid #909090;
 }
 
 .footer_element { 
- background-color: #E6E6E6;
+ background-color: #eef0f3;
  max-width: 980px;
- margin:0 auto;
+ margin: 0 auto;
  padding-bottom: 30px;
  padding-top: 20px;
- border-top: 2px solid #909090;
+ border-top: 3px solid #8d90a1
 
 
 }
