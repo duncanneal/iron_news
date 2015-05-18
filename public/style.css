@@ -49,9 +49,8 @@ ul li:nth-child(8) {
 h4 {
  float: right;
  padding: 5px;
-
-  display: inline-block;
-  font-size: 10pt; 
+ display: inline-block;
+ font-size: 10pt; 
 }
 
 ol li {
@@ -93,6 +92,10 @@ p {
 footer li:nth-child(2) { 
  font-weight: normal;
  font-size: 9pt;
+}
+
+ul li:nth-child(8) { 
+ border-right: 1px solid #909090; 
 }
 
 footer li {
