@@ -22,7 +22,9 @@ body {
  ul {
   width: 980px;
   margin: 0 auto;
-  background-color: #8d90a1
+  background-color: #8d90a1;
+  padding-bottom: 8px;
+  padding-top: 3px;
 }
 
 ul  {
