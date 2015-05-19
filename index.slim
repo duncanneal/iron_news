@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title = @page_title 
+    title = page_title 
     link href="reset.css" rel="stylesheet" type="text/css" /
     link href="style.css" rel="stylesheet" type="text/css" /
    
@@ -14,7 +14,7 @@ html
         li  
           a.title 
       
-        h4.login
+        h4 login
       ol
         - data["entry"].each do |entry|
         li
@@ -23,7 +23,7 @@ html
           h5.source =  entry["source"] 
           p.subtitle =  entry["subtitle"] 
        
-      h2.More
+      h2 More
     footer
       ul.footer_element
         - data["footer_list"].each do |item| 
