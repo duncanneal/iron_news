@@ -14,8 +14,8 @@ server = WEBrick::HTTPServer.new(:Port => PORT)
 server.mount '/assets', WEBrick::HTTPServlet::FileHandler, "#{ROOT}/public"
 
 server.mount_proc '/' do |req, res|
-  @page_title = "News"
-  @data = YAML.load_file("#{ROOT}/data.yml")
+  page_title = "News"
+  data = YAML.load_file("#{ROOT}/data.yml")
   template = Tilt.new("#{ROOT}/index.slim")
   res.body = template.render(self, {:data => data})
 end

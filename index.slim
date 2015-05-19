@@ -1,9 +1,9 @@
 doctype html
 html
   head
-    title = page_title 
+    title 
     link href="reset.css" rel="stylesheet" type="text/css" /
-    link href="style.css" rel="stylesheet" type="text/css" /
+    link href="stylesheet.sass" rel="stylesheet" type="text/css" /
    
   body
     .main-wrapper
@@ -19,10 +19,9 @@ html
         - data["entry"].each do |entry|
         li
           img src="images/grayarrow.gif" alt="arrow_mark"
-          h3.headline = entry["headline"] 
-          h5.source =  entry["source"] 
-          p.subtitle =  entry["subtitle"] 
-       
+          h3.headline =entry["headline"] 
+          h5.source =entry["source"] 
+          p.subtitle =entry["subtitle"] 
       h2 More
     footer
       ul.footer_element
