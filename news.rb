@@ -4,16 +4,21 @@ require 'tilt'
 require 'erb'
 require 'webrick'
 require 'yaml'
+require 'slim'
 
 ROOT = File.dirname(__FILE__)
 
-server = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => "#{ROOT}/public")
+PORT = ENV["PORT"] || 8000
 
-server.mount_proc '/iron_news' do |req, res|
+server = WEBrick::HTTPServer.new(:Port => PORT)
+
+server.mount '/assets', WEBrick::HTTPServlet::FileHandler, "#{ROOT}/public"
+
+server.mount_proc '/' do |req, res|
   @page_title = "News"
   @data = YAML.load_file("#{ROOT}/data.yml")
-  template = ERB.new(File.read("#{ROOT}/index.html.erb"))
-  res.body = template.result
+  template = Tilt.new("#{ROOT}/index.slim")
+  res.body = template.render(self, {:page_title => page_title})
 end
 
 trap 'INT' do
