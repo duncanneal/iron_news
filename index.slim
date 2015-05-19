@@ -14,11 +14,11 @@ html
         li  
           a.title 
       
-        h4 login
+        h4.login
       ol
         - data["entry"].each do |entry|
         li
-          .arrow
+          img src="images/grayarrow.gif" alt="arrow_mark"
           h3.headline = entry["headline"] 
           h5.source =  entry["source"] 
           p.subtitle =  entry["subtitle"] 

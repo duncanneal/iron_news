@@ -4,7 +4,6 @@ require 'tilt'
 require 'erb'
 require 'webrick'
 require 'yaml'
-require 'slim'
 
 ROOT = File.dirname(__FILE__)
 
@@ -18,7 +17,11 @@ server.mount_proc '/' do |req, res|
   @page_title = "News"
   @data = YAML.load_file("#{ROOT}/data.yml")
   template = Tilt.new("#{ROOT}/index.slim")
-  res.body = template.render(self, {:page_title => page_title})
+  res.body = template.render(self, {:data => data})
+end
+
+server.mount_proc '/stylesheet.css' do |req, res|
+  res.body = Tilt.new("#{ROOT}/stylesheet.sass").render
 end
 
 trap 'INT' do
