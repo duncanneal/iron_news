@@ -9,7 +9,6 @@ ROOT = File.dirname(__FILE__)
 
 server = WEBrick::HTTPServer.new(:Port => 8000, :DocumentRoot => "#{ROOT}/public")
 
-
 server.mount_proc '/iron_news' do |req, res|
   @page_title = "News"
   @data = YAML.load_file("#{ROOT}/data.yml")
